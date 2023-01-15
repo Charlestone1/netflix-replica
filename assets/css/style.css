@@ -1,0 +1,431 @@
+* {
+  box-sizing: border-box;
+  margin: 0; 
+  padding: 0;
+}
+/* header styling begins */
+header{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  
+  background: url(/assets/images/landing/heroimage.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 80vh;
+  
+}
+
+header nav{
+  display: flex;
+  justify-content: space-between; 
+  width: 95%; 
+  height: 70px;
+  /* background-color: blue; */
+  align-items: center;
+  align-self: center;
+
+}
+
+.logo {
+  width: 8rem;
+}
+header nav ul{
+  display: flex;
+  justify-content: space-between; 
+  list-style: none;
+}
+header nav ul li{
+  height: 2rem;
+  background-color: transparent;
+}
+
+.form-list{
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+  padding: 0.2rem 0.2rem;
+  border: 1px solid #AAAAAA
+}
+.form .language{
+  border: none;
+  background-color: transparent;
+  color: white;
+}
+.form .language:hover option{
+  color: black;
+}
+
+.form .fa-sharp{
+  color: white;
+}
+
+.signin-list {
+  margin-left: 1.5rem;
+  display: flex;
+}
+.signin-list button {
+  font-size: 0.8rem;
+  font-weight: bold;
+  background: #E50914;
+  align-self: center;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 2px;
+}
+.signin-list button a {
+  text-decoration: none;
+  color: white;
+}
+
+/* styling the hero text */
+
+.hero {
+  display: flex;
+  justify-content: center;
+  height: 60vh; 
+  align-items: flex-start;
+  
+}
+.hero-container{
+  /* background-color: aqua; */
+  width: 50vw;
+  text-align: center;
+  color: white;
+}
+.hero-container h1{
+   color: white;
+   font-size: 3.3rem;
+}
+.hero-container h3{
+   color: white;
+   font-size: 1.7rem;
+   font-weight: 400;
+   padding: 0.5rem;
+}
+
+.email-form{
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.input-div{
+  height: 2rem;
+  width: 50%;
+  border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+  /* background-color: blue; */
+}
+
+.input-div input{
+  height: 2rem;
+  width: 100%;
+  padding-left: 6px;
+  font-size: 0.8rem;
+}
+.get-started{
+  height: 2rem;
+  /* background-color: red; */
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
+.get-started button{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E50914;
+  color: white;
+  border: none;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+.get-started button a{
+  text-decoration: none;
+  color: white;
+}
+
+/* article section starts */
+
+.articles-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+}
+.articles-section article{
+  display: flex;
+  justify-content: center;
+
+  width: 100vw;
+  height: 47vh;
+  border-bottom: 0.5rem solid gray;
+}
+.articles-section .article-container{
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+
+}
+
+.article-details {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50vw;
+  padding-left: 2rem;
+
+}
+.article-details h2 {
+  font-size: 2.3rem;
+}
+.article-details p {
+  font-size: 1.2rem;
+  padding-top: 1rem;
+}
+.article-image {
+  display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 50vw;
+    /* background-color: aqua; */
+}
+.article-image img {
+  width: 22rem;
+}
+.article-alt1 .article-image img {
+  width: 20rem;
+}
+
+/* styling the downloading overlay  */
+
+.overlay {
+  display: flex;
+    justify-content: space-around;
+    align-items: center;
+  position: relative;
+  bottom: 90px;
+  /* left: 0; */
+  width: 200px;
+  height: 120px;
+  background-color: black;
+  border: 1px solid #757575;
+  border-radius: 6px;
+}
+.overlay .download-image{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.overlay .download-image img {
+
+  width: 35px;
+  height: 45px;
+}
+.overlay .download-image p {
+  padding-left: 0.8rem;
+  text-align: left;
+  font-size: 1rem;
+}
+.overlay .download-image p span {
+    font-size: 0.8rem;
+    color: #0071EB;
+}
+.overlay span .fa-solid {
+  font-size: 1.3rem;
+  color: #0071EB;
+}
+
+/* FAQ section Styling */
+
+.faq-section{
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  border-bottom: 0.5rem solid gray;
+}
+
+.faq-div {
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  padding: 1.3rem 0;
+  
+}
+
+.faq-div ul {
+  list-style: none;
+  width: 65%;
+}
+.faq-div ul li {
+  background-color: #757575;
+  margin: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 2.6rem;
+  padding: 0 1rem;
+}
+.faq-div ul li p {
+  font-size: 1.2rem;
+}
+.faq-div ul li span {
+  font-size: 1.3rem;
+}
+
+/* getting started */
+
+.form-cont{
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+.form-cont p {
+  font-size: 0.9rem;
+}
+.email-form2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  width: 32vw;
+}
+.input-div2 {
+  height: 2rem;
+  width: 80%;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+.input-div2 input {
+  height: 2rem;
+  width: 100%;
+  padding-left: 6px;
+  font-size: 0.8rem;
+}
+
+.get-started2 {
+  height: 2rem;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
+
+.get-started2 button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E50914;
+  color: white;
+  border: none;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.get-started2 button a {
+  text-decoration: none;
+  color: white;
+}
+
+
+/* stylng the footer */
+
+
+footer {
+  background-color: black;
+  border-bottom: 0.5rem solid gray;
+}
+
+.footer-wrapper{
+  padding: 48px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-link-container{
+  display: flex;
+ justify-content: center;
+}
+
+/* @media screen and (max-width: 820px) {
+  padding-top: 32px;
+} */
+
+
+.footer-links-wrapper{
+  display: flex;
+}
+
+/* @media screen and (max-width: 820px) {
+  flex-direction: column;
+} */
+
+.footer-link-items{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 16px;
+  text-align: left;
+  width: 160px;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+/* @media screen and (max-width: 420px) {
+  margin: 0;
+  padding: 10px;
+  width: 100%;
+} */
+
+/* .footer-link-title{
+  font-size: 14px;
+  margin-bottom: 16px;
+} */
+.footer-link-items a {
+  color: #757575;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  font-size: 14px;
+}
+
+.footer-link-items a:hover {
+  color: #E50914;
+  transition: 0.3s ease-out;
+}
+
+/* styling the select input */
+.footer-link-items .form-list {
+  margin: 1rem 0;
+}
+.footer-link-items .form-list .form .language {
+  color: #757575;
+}
+.footer-link-items .fa-sharp {
+  color: #757575;
+}
+
+.netflix-india {
+  margin: 0.5rem 0;
+}
+
+.foot-title {
+  color: #757575;
+  align-self: flex-start;
+  padding-left: 9.8rem;
+}

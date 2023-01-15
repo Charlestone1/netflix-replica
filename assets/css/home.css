@@ -1,0 +1,370 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #282828;
+}
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+header nav {
+    width: 100vw;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background-color: black;
+    color: white;
+}
+
+
+/* left nav styling */
+.left-nav{
+display: flex;
+justify-content: space-between;
+/* background-color: aqua; */
+width: 55%;
+
+} 
+.left-nav img {
+    padding: 0 3rem;
+}
+.left-nav ul{
+display: flex;
+justify-content: space-between;
+align-items: center;
+list-style: none;
+width: 100%;
+} 
+.left-nav ul li :hover {
+    color: #E50914;
+}
+.left-nav ul a{
+text-decoration: none;
+color: white;
+} 
+
+/* right nav styling */
+.right-nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 35%;
+    padding-right: 3rem;
+}
+
+.right-nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    width: 80%;
+}
+.right-nav ul li :hover {
+    color: #E50914;
+}
+
+
+.right-nav ul a {
+    text-decoration: none;
+    color: white;
+}
+
+ .hero {
+    width: 100vw;
+    height: 100vh;
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-end;
+    background: url(../images/clone-images/poster-popular/MoviePoster.png);
+    background-size: cover;
+    /* background-color: aqua; */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* background-color: #fff; */
+}
+
+.hero-box1{
+    display: flex;
+    justify-content: space-between;
+    height: 20rem;
+    /* width: 100%; */
+    /* background-color: blue; */
+}
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    padding-left: 3rem;
+    /* background-color: green; */
+    color: white;
+}
+.h4-cont {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.8rem 0;
+}
+.h4-cont span {
+    font-weight: bold;
+    font-size: 12px;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    padding: 2px;
+    color: white;
+    border-radius: 2px;
+    background-color: red;
+}   
+
+.h4-cont h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    padding-left: 1rem;
+}   
+.hero-text p {
+    padding-bottom: 0.8rem;
+    font-size: 23px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.hero-buttons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* padding-bottom: 1rem; */
+}
+.hero-buttons .oynat-btn {
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-right: 1rem;
+    border-radius: 6px; 
+    border: 1px solid transparent;
+    
+}
+.hero-buttons .oynat-btn .fa-sharp {
+    padding-right: 0.6rem;
+}
+.hero-buttons .daha-btn {
+    display: flex;
+    align-items: center;
+    padding: 0.7rem 1rem;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-right: 1rem;
+    border-radius: 6px; 
+    color: white;
+    border: 1px solid transparent;
+    background-color: rgba(255, 255, 255, 0.3);
+    
+}
+.hero-buttons .daha-btn svg {
+    padding-right: 0.6rem;
+    
+}
+
+
+
+
+.hero-box2{
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+    padding-left: 3rem;
+}
+
+.hero-group-title {
+    color: white;
+}
+.hero-group-title h2{
+    padding: 0.8rem 0;
+}
+
+
+.hero-group-image-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: space-between;
+    overflow: hidden;
+}
+/* .hero-group-image-container:hover{
+    overflow: auto;
+} */
+.hero-group-image-container img{
+    border-radius: 4px;
+    padding: 0 0.1rem;
+}
+
+/* Articles main style */
+.article-section {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+/* articles styling begins */
+.img-article {
+    display: grid;
+    padding-left: 3rem;
+    width: 100vw;
+}
+.article-group-image-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: space-between;
+    overflow: hidden;
+    
+}
+
+.article-group-image-container img{
+    border-radius: 4px;
+    padding: 0 0.1rem;
+}
+.article-group-title {
+    color: white;
+}
+
+.article-group-title h2 {
+    padding: 0.8rem 0;
+    margin-top: 2rem;
+}
+
+/* Yeniden article styling */
+.img-article-unpadded {
+    width: 100vw;
+    /* display: none; */
+}
+.img-article-unpadded .article-group-title {
+    padding-left: 3rem;
+}
+ 
+.article-group-image-container-turkey{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.article-group-image-container img {
+    border-radius: 3px;
+}
+
+
+
+
+
+
+/* footer styling */
+
+footer {
+    background-color: #282828;
+}
+
+.footer-wrapper {
+    padding: 10px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.footer-link-container {
+    display: flex;
+    justify-content: center;
+}
+
+
+.footer-links-wrapper {
+    display: flex;
+}
+
+
+.footer-link-items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 16px;
+    text-align: left;
+    width: 160px;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+.footer-link-items a {
+    color: #757575;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    font-size: 14px;
+}
+
+.footer-link-items a:hover {
+    color: #E50914;
+    transition: 0.3s ease-out;
+}
+
+/* styling the select input */
+.footer-link-items .form-list {
+    margin: 1rem 0;
+}
+
+.footer-link-items .form-list .form .language {
+    color: #757575;
+}
+
+.footer-link-items .fa-sharp {
+    color: #757575;
+}
+
+.foot-social-icons {
+    color: #757575;
+    align-self: flex-start;
+    padding-left: 9.8rem;
+    padding-top: 2rem;
+    display: flex; 
+    justify-content: space-between;
+}
+.foot-social-icons img {
+    
+    padding-right: 1rem;
+}
+
+.form-list {
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    padding: 0.2rem 0.2rem;
+    border: 1px solid #AAAAAA
+}
+.form .language {
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+
+.form .language:hover option {
+    color: black;
+}
+
+.form .fa-sharp {
+    color: #757575;
+}
+
+.netflix-india {
+    color: #757575;
+    align-self: flex-start;
+    padding-left: 9.8rem;
+    padding-bottom: 2rem;
+}
