@@ -97,8 +97,6 @@ color: white;
     display: flex;
     justify-content: space-between;
     height: 20rem;
-    /* width: 100%; */
-    /* background-color: blue; */
 }
 .hero-text {
     display: flex;
@@ -135,7 +133,7 @@ color: white;
 }   
 .hero-text p {
     padding-bottom: 0.8rem;
-    font-size: 23px;
+    font-size: 1.45rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .hero-buttons {
@@ -474,4 +472,147 @@ footer {
     .nav-burger-ul.active {
         left: 0;
     }
+
+/* hero section styling */
+.hero-box1 {
+    height: 20rem;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 98%;
+    padding-left: 0rem;
+    /* background-color: green; */
+    color: white;
+}
+.hero-text img {
+    width: 15rem;
+}
+.hero-empty {
+    display: none;
+}
+.h4-cont {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.6rem 0;
+}
+
+.h4-cont span {
+    font-weight: bold;
+    font-size: 12px;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    padding: 2px;
+    color: white;
+    border-radius: 2px;
+    background-color: red;
+}
+
+.h4-cont h2 {
+    font-size: 1.5rem;
+    padding-left: 0.8rem;
+}
+
+.hero-text p {
+    padding-bottom: 0.6rem;
+    font-size: 1.2rem;
+}
+
+
+
+.hero-buttons .oynat-btn {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+    margin-right: 0.8rem;
+    border-radius: 5px;
+
+}
+
+.hero-buttons .oynat-btn .fa-sharp {
+    padding-right: 0.4rem;
+}
+
+.hero-buttons .daha-btn {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0.8rem;
+    font-weight: bold;
+    font-size: 0.9rem;
+    border-radius: 5px;
+
+}
+
+.hero-buttons .daha-btn svg {
+    padding-right: 0.5rem;
+
+}
+
+.hero-box2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 0;
+    padding: 0 0.5rem;
+    
+}
+
+.hero-group-title {
+    color: white;
+}
+
+.hero-group-title h2 {
+    font-size: 1.3rem;
+}
+
+
+.hero-group-image-container {
+    justify-content: space-between;
+    /* overflow: auto; */
+}
+.hero-group-image-container img {
+    width: 9rem;
+}
+
+/* articles styling */
+.img-article {
+    padding-left: 0;
+    padding: 0 0.5rem;
+}
+
+
+
+.article-group-image-container img {
+    width: 9rem;
+}
+
+.article-group-title h2 {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+}
+.img-article-unpadded .article-group-title {
+    padding-left: 0;
+    padding: 0 0.5rem;
+}
+
+.article-group-image-container-turkey img{
+    width: 5.1rem;
+}
+.article-group-image-container-turkey .svg1{
+    height: 7.4rem;
+}
+ 
+/* footer styling */
+
+.footer-link-container {
+    flex-direction: column;
+}
+
+.foot-title {
+    align-self: center;
+    padding-left: 0;
+}
 }
