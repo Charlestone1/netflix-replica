@@ -86,3 +86,29 @@ h3 {
     padding: 0.3rem 1rem;
     font-size: 26px;
 }
+
+/* Tablet and medium devices */
+@media only screen and (max-width: 768px) {
+
+    .profile-container {
+        width: 98%;
+        grid-template-columns: auto auto;
+        padding-top: 0.6rem;
+        row-gap: 0.6rem;
+    }
+
+    h2 {
+        font-size: 50px;
+        padding-top: 3rem;
+    }
+}
+
+/* medium devices */
+@media only screen and (max-width: 991px) {
+
+    .profile-container {
+        width: 95%;
+        grid-template-columns: auto auto auto;
+        row-gap: 0.6rem;
+    }
+}
