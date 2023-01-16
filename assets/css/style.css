@@ -3,7 +3,7 @@
   margin: 0; 
   padding: 0;
 }
-/* header styling begins */
+/* header styling begins */ 
 header{
   display: flex;
   flex-direction: column;
@@ -209,10 +209,10 @@ header nav ul li{
     justify-content: space-around;
     align-items: center;
   position: relative;
-  bottom: 90px;
+  bottom: 5.625rem;
   /* left: 0; */
-  width: 200px;
-  height: 120px;
+  width: 12.5rem;
+  height: 7.5rem;
   background-color: black;
   border: 1px solid #757575;
   border-radius: 6px;
@@ -224,8 +224,8 @@ header nav ul li{
 }
 .overlay .download-image img {
 
-  width: 35px;
-  height: 45px;
+  width: 2.1875rem;
+  height: 2.8125rem;
 }
 .overlay .download-image p {
   padding-left: 0.8rem;
@@ -293,7 +293,7 @@ header nav ul li{
   padding: 1rem 0;
 }
 .form-cont p {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 .email-form2 {
   display: flex;
@@ -337,6 +337,11 @@ header nav ul li{
 .get-started2 button a {
   text-decoration: none;
   color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -428,4 +433,167 @@ footer {
   color: #757575;
   align-self: flex-start;
   padding-left: 9.8rem;
+}
+
+
+
+/* responsive design. for tablet */ 
+@media only screen and (max-width: 991px) {
+    .articles-section article {
+        height: 38vh;
+      }
+  
+    .article-details h2 {
+      font-size: 1.3rem;
+    }
+  
+    .article-details p {
+      font-size: 1rem;
+      padding-top: 0.7rem;
+    }  
+    .article-image img {
+      width: 13rem;
+    }
+  
+    .article-alt1 .article-image img {
+      width: 13rem;
+    }
+
+    .overlay {
+      
+      bottom: 5.625rem;
+      /* left: 0; */
+      width: 12.5rem;
+      height: 5rem;
+      border-radius: 4px;
+    }
+
+    .overlay .download-image {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .overlay .download-image img {
+
+      width: 1.9rem;
+      height: 2.3rem;
+    }
+
+    .overlay .download-image p {
+      padding-left: 0.6rem;
+      text-align: left;
+      font-size: 0.8rem;
+    }
+
+    .overlay .download-image p span {
+      font-size: 0.6rem;
+    }
+
+    .overlay span .fa-solid {
+      font-size: 1rem;
+    }
+
+/* FAQ section Styling */
+  .faq-div {
+    width: 80vw;
+   
+  }
+
+  .faq-div ul {
+    width: 80%;
+  }
+
+  /* getting started button */
+      
+    .email-form2 {
+      
+      width: 60vw;
+    }
+  /* footer styling */
+
+    .footer-link-container {
+      flex-direction: column;
+    }
+
+    .foot-title {
+      align-self: center;
+      padding-left: 0;
+    }
+
+}
+/* Tablet and medium devices */
+@media only screen and (max-width: 768px) {
+    .article-details h2 {
+      font-size: 1.1rem;
+    }
+  
+    .article-details p {
+      font-size: 0.65rem;
+      padding-top: 0.6rem;
+    }
+  
+    .article-image img {
+      width: 10rem;
+    }
+  
+    .article-alt1 .article-image img {
+      width: 10rem;
+    }
+  
+    .overlay {
+  
+      bottom: 4rem;
+      /* left: 0; */
+      width: 9rem;
+      height: 3.6rem;
+      border-radius: 3px;
+    }
+  
+    .overlay .download-image img {
+  
+      width: 1.5rem;
+      height: 1.6rem;
+    }
+  
+    .overlay .download-image p {
+      padding-left: 0.3rem;
+      font-size: 0.5rem;
+    }
+  
+    .overlay .download-image p span {
+      font-size: 0.4rem;
+    }
+  
+    .overlay span .fa-solid {
+      font-size: 0.8rem;
+    }
+  
+    /* FAQ section Styling */
+    .faq-div {
+      width: 80vw;
+  
+    }
+  
+    .faq-div ul {
+      width: 80%;
+    }
+  
+    /* getting started button */
+  
+    .email-form2 {
+  
+      width: 60vw;
+    }
+  
+    /* footer styling */
+  
+    .footer-link-container {
+      flex-direction: column;
+    }
+  
+    .foot-title {
+      align-self: center;
+      padding-left: 0;
+    }
 }
